@@ -1,0 +1,10 @@
+[package]
+name = "embassy-blinky"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+stm32-metapac = { version = "15.0.0", features = ["stm32h563zi", "rt"]}
+cortex-m = { version = "0.7.7", features = ["inline-asm", "critical-section-single-core"] }
+cortex-m-rt = "0.7.5"
+panic-halt = "1.0.0"
